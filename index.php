@@ -26,21 +26,23 @@
 								<div class="row">
 									<div class="col-xs-12 text-center">
 										<div class="header">
-											<h1 class="header__h1">Инновационные плойки для волос от BaByliss</h1>
-											<h3 class="header__h3">Выглядеть модно и красиво теперь намного проще!</h3>
+											<h1 class="header__h1 editors" contenteditable="true" id="editor4">Инновационные плойки для волос от BaByliss</h1>
+											<h3 class="header__h3 editors" contenteditable="true" id="editor5">Выглядеть модно и красиво теперь намного проще!</h3>
 										</div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="col-lg-6 text-left">
-										<ul class="list list_indent_big">
-											<li class="list__item list__item_purple">Секрет твоей красоты - Curl Secret!</li>
-											<li class="list__item list__item_purple">Первый прибор для автоматического создания локонов</li>
-											<li class="list__item list__item_purple">Теперь дома или на работе - шикарная прическа всего за пару минут.</li>
-										</ul>
+										<div class="editors" contenteditable="true" id="editor6">
+											<ul class="list list_indent_big">
+												<li class="list__item list__item_purple">Секрет твоей красоты - Curl Secret!</li>
+												<li class="list__item list__item_purple">Первый прибор для автоматического создания локонов</li>
+												<li class="list__item list__item_purple">Теперь дома или на работе - шикарная прическа всего за пару минут.</li>
+											</ul>
+										</div>
 									</div>
 									<div class="col-lg-6 text-center">
-										<div class="images">
+										<div class="images editors imag" contenteditable="true" id="editor7">
 											<img class="images__girl" src="img/girl_section-1.png" alt="girl">
 										</div>
 									</div>
@@ -147,7 +149,7 @@
 												<li class="list__item list__item_pink">Для волос любой длины</li>
 												<li class="list__item list__item_pink">Срок службы - до 10000 часов!</li>
 											</ul>
-											<div class="goods__description">Почувствуй себя принцессой<br/>прямо сейчас!</div>
+											<div class="goods__description editors" contenteditable="true" id="editor2">Почувствуй себя принцессой<br/>прямо сейчас!</div>
 											<a href="" class="btn goods__btn">Заказать</a>
 										</div>
 									</div>
@@ -168,17 +170,19 @@
 								<div class="row">
 									<div class="col-lg-6 text-center">
 										<div class="goods">
-											<div class="goods__title" contenteditable="true" name="editor1">BaByliss Curl Secret</div>
+											<div class="goods__title editors" contenteditable="true" id="editor1">BaByliss Curl Secret</div>
 											<div class="goods__price">
 												<span class="goods__price_old">5599 р.</span>
 												<span class="goods__price_new">4299 р.</span>
 											</div>
-											<ul class="list list_indent_large">
-												<li class="list__item list__item_pink">
-													<span class="list__item_big">Первая автоматическая</span> плойка
-												</li>
-												<li class="list__item list__item_pink">Прекрасный способ обзавестись кудряшками</li>
-											</ul>
+											<div class="editors" contenteditable="true" id="editor3">
+												<ul class="list list_indent_large">
+													<li class="list__item list__item_pink">
+														<span class="list__item_big">Первая автоматическая</span> плойка
+													</li>
+													<li class="list__item list__item_pink">Прекрасный способ обзавестись кудряшками</li>
+												</ul>
+											</div>
 											<div class="goods__description">Экономьте время, нервы и будьте ослепительны!</div>
 											<a href="" class="btn">Заказать</a>
 										</div>
@@ -215,12 +219,26 @@
 
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<script src="http://cdn.ckeditor.com/4.4.5/standard/ckeditor.js"></script>
-	<!-- // <script src="js/js.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- // <script src="js/ckeditor/ckeditor.js"></script> -->
+	<script src="//cdn.ckeditor.com/4.4.5/full/ckeditor.js"></script>
+	<script src="js/js.js"></script>
 
 	<script>
-		CKEDITOR.inline( 'editor1' );
+		$(document).ready(function(){
+			$('.editors').each(function(){
+				var id = $(this).attr('id');
+				var editor = CKEDITOR.inline(id, {
+					removePlugins: 'toolbar',
+					autoParagraph: false,
+					forcePasteAsPlainText: true,
+					allowedContent: true
+				});
+				editor.on( 'change', function( evt ) {
+					console.log( evt.editor.getData() )
+				});
+			});
+		});
 	</script>
 
 </body>
