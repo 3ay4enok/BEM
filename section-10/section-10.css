@@ -1,0 +1,39 @@
+.buy {
+	padding: 90px 0 85px;
+	background: url('images/bg_section-10.jpg') no-repeat 0 0 / cover;
+}
+
+.text__description {
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: none;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.text__description_white {
+	color: #fff;
+}
+
+.btn {
+	font-weight: 300;
+	font-size: 25px;
+	color: #fff;
+	background: #837ecd;
+	height: 60px;
+	line-height: 60px;
+	width: 304px;
+	padding: 0;
+}
+
+.hit__btn {
+	margin-top: 35px;
+}
+
+
+@media (min-width: 1230px) {
+	.container {
+		width: 1200px;
+	}
+}

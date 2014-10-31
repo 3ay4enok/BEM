@@ -1,0 +1,71 @@
+.features_2 {
+	padding: 90px 0 100px;
+	background: url("images/girl-feature.jpg") no-repeat scroll right bottom #fff;
+	display: block;
+	margin: 0;
+	z-index: 20;
+}
+
+.head__big {
+	line-height: 45px;
+	font-size: 50px;
+	font-weight: bold;
+	color: #b969e1;
+	margin: 0 0 10px 0;
+}
+
+.header__h3 {
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #222222;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.list__item {
+	position: relative;
+	padding-left: 37px;
+	font-size: 15px;
+	color: #666666;
+}
+
+.list__item:before {
+	content: "";
+	width: 21px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	top: 3px;
+}
+
+.list_indent_bigger {
+	margin-top: 70px;
+	margin-bottom: 75px;
+}
+
+.list_padding_left {
+	padding-left: 0;
+}
+
+.list__item_pink {
+	margin-bottom: 20px;
+}
+
+.list__item_pink:before {
+	background: url('images/check_pink.png') no-repeat;
+}
+
+
+@media (min-width: 1230px) {
+	.container {
+		width: 1200px;
+	}
+}

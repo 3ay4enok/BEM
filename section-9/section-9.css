@@ -1,0 +1,33 @@
+.celebrity {
+	padding: 95px 0 105px;
+}
+
+.header__h2 {
+	color: #c49ece;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.owl-choice {
+	margin-top: 90px;
+}
+
+.carousel__name {
+	color: #222222;
+	font-weight: 300;
+	font-size: 19px;
+	margin-top: 20px;
+	display: block;
+	line-height: normal;
+}
+
+
+
+
+@media (min-width: 1230px) {
+	.container {
+		width: 1200px;
+	}
+}

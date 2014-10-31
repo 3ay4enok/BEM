@@ -1,0 +1,22 @@
+.wrapper {
+	background: #ddd;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+.section-control {
+	width: 4%;
+}
+
+.left-section-control {
+	left: -4%;
+}
+
+.section-control.right-section-control {
+	right: -4%;
+}
+
+.section1,
+.section2 {
+	background: #fff;
+}

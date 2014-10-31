@@ -1,0 +1,87 @@
+.testimonial {
+	padding: 95px 0 115px;
+}
+
+.header__h2 {
+	color: #c49ece;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.reviews {
+	margin-top: 75px;
+}
+
+.reviews__description {
+	position: relative;
+}
+
+.reviews__description:before,
+.reviews__description:after {
+  color: rgba(51, 51, 51, 0.15);
+  content: "\"";
+  display: block;
+  font-size: 95px;
+  font-style: italic;
+  line-height: 0;
+  position: absolute;
+}
+
+.reviews__description:before {
+	top: 28px;
+	left: 0;
+}
+
+.reviews__description:after {
+	right: 28px;
+	bottom: 40px;
+}
+
+.reviews__images {
+	margin: 0 auto 35px;
+}
+
+.reviews__text {
+	color: #333333;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 80px;
+}
+
+.reviews__signature {
+	color: #333333;
+	font-size: 25px;
+	margin: 15px 0 0;
+}
+
+.reviews__signature_bold {
+	font-weight: bold;
+}
+
+.changes__indicators {
+	margin-bottom: 0;
+	bottom: -50px;
+}
+
+.changes__indicators .indicators__item {
+	background: #d8d8d8;
+	height: 14px;
+	width: 14px;
+	margin: 0;
+}
+
+.indicators__item.active {
+	background: #837ecd;
+}
+
+
+
+@media (min-width: 1230px) {
+	.container {
+		width: 1200px;
+	}
+}

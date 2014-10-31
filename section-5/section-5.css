@@ -1,0 +1,63 @@
+.steps {
+	padding: 115px 0 120px;
+	background: url('images/bg_section-5.jpg') no-repeat 0 0 / cover;
+}
+
+.header__h2 {
+	color: #c49ece;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.step {
+	margin-top: 110px;
+}
+
+.text__description {
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: none;
+	line-height: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.text__description_black {
+	color: #222;
+}
+
+.step__line {
+	position: relative;
+}
+
+.step__line:after {
+	background: none repeat scroll 0 0 #dfdfdf;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 0 auto;
+	position: absolute;
+	right: -95px;
+	top: 18px;
+	width: 170px;
+}
+
+.step__desc {
+	margin: 40px 0 0 0;
+	text-align: left;
+}
+
+.step__text {
+	padding: 0;
+	margin: 0;
+	line-height: 25px;
+}
+
+
+@media (min-width: 1230px) {
+	.container {
+		width: 1200px;
+	}
+}
