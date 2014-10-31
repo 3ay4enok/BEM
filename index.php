@@ -42,7 +42,7 @@
 										</div>
 									</div>
 									<div class="col-lg-6 text-center">
-										<div class="images editors imag" contenteditable="true" id="editor7">
+										<div class="images imag" contenteditable="true" id="editor7">
 											<img class="images__girl" src="img/girl_section-1.png" alt="girl">
 										</div>
 									</div>
@@ -230,6 +230,17 @@
 				var id = $(this).attr('id');
 				var editor = CKEDITOR.inline(id, {
 					removePlugins: 'toolbar',
+					autoParagraph: false,
+					forcePasteAsPlainText: true,
+					allowedContent: true
+				});
+				editor.on( 'change', function( evt ) {
+					console.log( evt.editor.getData() )
+				});
+			});
+			$('.imag').each(function(){
+				var id = $(this).attr('id');
+				var editor = CKEDITOR.inline(id, {
 					autoParagraph: false,
 					forcePasteAsPlainText: true,
 					allowedContent: true
